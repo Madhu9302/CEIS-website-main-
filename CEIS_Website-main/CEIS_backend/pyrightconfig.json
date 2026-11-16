@@ -1,0 +1,17 @@
+{
+  "include": [
+    "CEIS_backend"
+  ],
+  "extraPaths": [
+    "CEIS_backend"
+  ],
+  "executionEnvironments": [
+    {
+      "root": "CEIS_backend",
+      "extraPaths": [
+        "CEIS_backend"
+      ]
+    }
+  ]
+}
+
