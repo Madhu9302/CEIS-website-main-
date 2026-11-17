@@ -5,3 +5,9 @@ __pycache__/
 .env
 .vscode/
 .idea/
+
+.env
+CEIS_backend/.env
+venv/
+CEIS_backend/venv/
+__pycache__/
