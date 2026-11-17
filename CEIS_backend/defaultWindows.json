@@ -1,0 +1,213 @@
+{
+  "company": {
+    "name": "CodeEagle Info Solutions Pvt. Ltd.",
+    "shortName": "CodeEagle",
+    "location": "102, NRK Biz Park, Near C21 Mall, Scheme 54, Indore, Madhya Pradesh 452010",
+    "city": "Indore, India",
+    "email": "hr@codeeagleinfosolutions.com",
+    "phone": "+91 9243586131",
+    "cin": "CIN: U62099MP2025PTC077211",
+    "founded": "2018"
+  },
+  "navbar": {
+    "announcement": "Engineering pods available for Q2/Q3 sprint start",
+    "contactBtn": "Get in Touch"
+  },
+  "clients": {
+    "label": "TRUSTED BY AMBITIOUS BRANDS & ENTERPRISE DELIVERY PARTNERS",
+    "partners": [
+      { "name": "MEDCORE HEALTH", "tag": "Healthcare Cloud" },
+      { "name": "PROPVISTA GLOBAL", "tag": "PropTech Platform" },
+      { "name": "HYPERCART RETAIL", "tag": "E-Commerce Mesh" },
+      { "name": "EDUPULSE AI", "tag": "EdTech & LLM" },
+      { "name": "FINLEDGER SYSTEMS", "tag": "Fintech Core" },
+      { "name": "NEXUS CLOUD LOGISTICS", "tag": "Fleet Telemetry" },
+      { "name": "AARSH HEALTHCARE", "tag": "Clinical API" },
+      { "name": "VORTEX ENTERPRISE", "tag": "DevOps & IaC" }
+    ]
+  },
+  "hero": {
+    "badge": "High-Performance Cloud, AI & Web Architecture",
+    "headlinePrefix": "Engineering the next generation of",
+    "headlineGradient": "scalable software.",
+    "subtitle": "We partner with ambitious founders and engineering teams to design, build, and deploy resilient cloud platforms, ultra-responsive web interfaces, and high-impact AI systems.",
+    "stats": [
+      {
+        "id": "stat-01",
+        "value": "15,000+",
+        "numericValue": 15000,
+        "suffix": "+",
+        "label": "Engineering Hours"
+      },
+      {
+        "id": "stat-02",
+        "value": "32+",
+        "numericValue": 32,
+        "suffix": "+",
+        "label": "Projects Delivered"
+      },
+      {
+        "id": "stat-03",
+        "value": "50+",
+        "numericValue": 50,
+        "suffix": "+",
+        "label": "Enterprise Partners"
+      },
+      {
+        "id": "stat-04",
+        "value": "98%",
+        "numericValue": 98,
+        "suffix": "%",
+        "label": "Client Retention"
+      }
+    ]
+  },
+  "case_studies": {
+    "sectionTitle": "Selected Case Studies",
+    "sectionSubtitle": "Empirical throughput, latency, and business outcomes from recent production deployments.",
+    "studies": [
+      {
+        "id": "case-01",
+        "category": "Healthcare & Telehealth",
+        "title": "Patient Care & Scheduling Engine",
+        "summary": "Rebuilt distributed appointment scheduling and API pipeline with sub-30-second booking flows and automated edge synchronization.",
+        "resultBadge": "60% Faster Load Time",
+        "numericMetric": 60,
+        "metricSuffix": "%",
+        "metricPrefix": "",
+        "metricLabel": "Faster P99 Load Time",
+        "tags": ["React 19", "Python FastAPI", "AWS ECS", "Redis"]
+      },
+      {
+        "id": "case-02",
+        "category": "E-Commerce & Retail",
+        "title": "High-Throughput Inventory & Store Mesh",
+        "summary": "Engineered multi-channel real-time stock reservation engine handling 45,000 peak concurrent cart checkouts with zero inventory race conditions.",
+        "resultBadge": "+34% Checkout Completion",
+        "numericMetric": 34,
+        "metricSuffix": "%",
+        "metricPrefix": "+",
+        "metricLabel": "Checkout Funnel Gain",
+        "tags": ["Next.js", "Node.js", "PostgreSQL", "Kafka"]
+      },
+      {
+        "id": "case-03",
+        "category": "Real Estate & PropTech",
+        "title": "Interactive Geo-Spatial Property Portal",
+        "summary": "Constructed fast vector-driven map explorer with real-time lead dispatch microservices and sub-second spatial querying.",
+        "resultBadge": "10,000+ Active Users",
+        "numericMetric": 10000,
+        "metricSuffix": "+",
+        "metricPrefix": "",
+        "metricLabel": "Active Monthly Operators",
+        "tags": ["React", "FastAPI", "Cloudflare", "PostGIS"]
+      }
+    ]
+  },
+  "services": {
+    "sectionTitle": "How We Help You Build",
+    "sectionSubtitle": "End-to-end software craftsmanship from vision and architectural blueprint to production deployment.",
+    "items": [
+      {
+        "id": "srv-01",
+        "title": "Web & UI/UX Design",
+        "subtitle": "Accessible, frame-budgeted digital products",
+        "description": "We engineer polished React 19 and Next.js interfaces with hardware-accelerated animations, pixel-perfect design systems, and lighthouse 100 performance.",
+        "tags": ["React 19", "Next.js", "Tailwind CSS", "Figma Design Systems"],
+        "metricVisual": "100/100 Performance"
+      },
+      {
+        "id": "srv-02",
+        "title": "Mobile App Development",
+        "subtitle": "Native fluidity with cross-platform velocity",
+        "description": "Cross-platform iOS and Android applications delivering 60 FPS fluidity, instant offline persistence, push notifications, and biometric authentication.",
+        "tags": ["React Native", "Flutter", "iOS & Android", "Offline Sync"],
+        "metricVisual": "60 FPS Native Feel"
+      },
+      {
+        "id": "srv-03",
+        "title": "Backend APIs & Cloud",
+        "subtitle": "High-throughput microservices and data pipelines",
+        "description": "Deterministic Python FastAPI, Go, and Node.js microservices engineered with PostgreSQL, Redis cluster caching, and automated AWS/GCP Kubernetes mesh.",
+        "tags": ["FastAPI", "Go", "PostgreSQL", "AWS & Kubernetes"],
+        "metricVisual": "GET /api/v1/cluster -> 200 OK · 42ms"
+      },
+      {
+        "id": "srv-04",
+        "title": "Practical AI Solutions",
+        "subtitle": "Deterministic intelligence integrated into business flows",
+        "description": "Retrieval-Augmented Generation (RAG) pipelines, quantized local LLMs, vector semantic search, and document intelligence systems with audit-safe lineage.",
+        "tags": ["RAG Pipelines", "Vector Search", "Ollama", "Data Workflows"],
+        "metricVisual": "RAG Vector Search -> Verified Output"
+      }
+    ]
+  },
+  "careers": {
+    "sectionTitle": "Join Our Engineering Team",
+    "sectionSubtitle": "On-site engineering at our Indore headquarters. We look for technical craftsmanship, ownership, and curiosity.",
+    "roles": [
+      {
+        "id": "role-01",
+        "title": "Frontend React & TypeScript Engineer",
+        "type": "Full-Time · Indore Office",
+        "exp": "3–6 Years Experience",
+        "description": "Command client-side state architectures, optimize DOM render lifecycles, and build reusable component systems in React and TypeScript.",
+        "skills": ["React 19", "TypeScript", "Tailwind CSS", "Next.js", "WebGL"]
+      },
+      {
+        "id": "role-02",
+        "title": "Python & FastAPI Backend Engineer",
+        "type": "Full-Time · Indore Office",
+        "exp": "3–6 Years Experience",
+        "description": "Build high-throughput REST APIs, optimize PostgreSQL query execution plans, and orchestrate containerized services on Docker and AWS.",
+        "skills": ["Python 3.12", "FastAPI", "PostgreSQL", "Docker", "Redis"]
+      },
+      {
+        "id": "role-03",
+        "title": "Cloud DevOps & Infrastructure Specialist",
+        "type": "Full-Time · Indore Office",
+        "exp": "4–7 Years Experience",
+        "description": "Design declarative Terraform infrastructure, manage Kubernetes clusters, and enforce zero-downtime blue/green deployment pipelines.",
+        "skills": ["Terraform", "Kubernetes", "AWS / GCP", "GitHub Actions", "Docker"]
+      }
+    ]
+  },
+  "tickets": [
+    {
+      "id": "CE-1042",
+      "date": "2026-11-04 16:42",
+      "clientName": "Devendra Singhania",
+      "company": "Apex Fintech",
+      "email": "d.singhania@apexfintech.in",
+      "phone": "+91 98260 11204",
+      "scope": "High-Throughput Financial API",
+      "budget": "₹15L - ₹30L",
+      "status": "OPEN",
+      "description": "Looking to overhaul our trading dashboard and construct async FastAPI microservices with real-time Redis caching."
+    },
+    {
+      "id": "CE-1039",
+      "date": "2026-11-03 11:15",
+      "clientName": "Dr. Ananya Verma",
+      "company": "Pulse Care Health",
+      "email": "ananya@pulsecare.org",
+      "phone": "+91 94250 88921",
+      "scope": "Patient Portal & Scheduling Engine",
+      "budget": "₹20L - ₹40L",
+      "status": "IN_PROGRESS",
+      "description": "Need an appointment scheduling web and mobile app with WhatsApp notifications for clinic network."
+    },
+    {
+      "id": "CE-1035",
+      "date": "2026-10-29 09:30",
+      "clientName": "Vikramaditya Solanki",
+      "company": "Central Logistics",
+      "email": "v.solanki@centrallogistics.com",
+      "phone": "+91 91110 33451",
+      "scope": "Cloud Infrastructure & Telemetry",
+      "budget": "₹10L - ₹20L",
+      "status": "RESOLVED",
+      "description": "Migrated fleet tracking services to AWS with automated alerts and live telemetry dashboard."
+    }
+  ]
+}
