@@ -25,13 +25,13 @@ class Job(Base):
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utc_now, nullable=False)
     updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utc_now, onupdate=utc_now, nullable=False)
 
-    applications: Mapped[list["JobApplication"]] = relationship(
-        "JobApplication", back_populates="job", cascade="all, delete-orphan"
+    applications: Mapped[list["PortalJobApplication"]] = relationship(
+        "PortalJobApplication", back_populates="job", cascade="all, delete-orphan"
     )
 
 
-class JobApplication(Base):
-    __tablename__ = "job_applications"
+class PortalJobApplication(Base):
+    __tablename__ = "portal_job_applications"
 
     id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
     job_id: Mapped[uuid.UUID] = mapped_column(
@@ -46,4 +46,7 @@ class JobApplication(Base):
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utc_now, nullable=False)
 
     job: Mapped["Job"] = relationship("Job", back_populates="applications")
+
+
+JobApplication = PortalJobApplication
 

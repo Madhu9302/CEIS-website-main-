@@ -20,15 +20,36 @@ from app.db.base import Base
 from app.models.user import User
 from app.models.submission import Submission
 from app.models.notification import Notification
+from app.models.service import Service
+from app.models.blog import Blog
+from app.models.job import Job, JobApplication
+from app.models.site_setting import SiteSetting
 from app.core.security import hash_password
 
 # Routers
 from app.routes.public.auth import router as public_auth_router
 from app.routes.admin.auth import router as admin_auth_router
 from app.routes.public.inquiries import router as public_inquiries_router
+from app.routes.admin.inquiries import router as admin_inquiries_router
 from app.routes.admin.notifications import router as admin_notifications_router
+from app.routes.public.services import router as public_services_router
+from app.routes.admin.services import router as admin_services_router
+from app.routes.public.blogs import router as public_blogs_router
+from app.routes.admin.blogs import router as admin_blogs_router
+from app.routes.public.jobs import router as public_jobs_router
+from app.routes.admin.jobs import router as admin_jobs_router
+from app.routes.public.settings import router as public_settings_router
+from app.routes.admin.settings import router as admin_settings_router
 
 logger = logging.getLogger("ceis.main")
+
+ALLOWED_ORIGINS = [
+    "http://localhost:4321",                    # Astro local dev
+    "http://localhost:3000",                    # Local preview
+    "https://ceis-d1.vercel.app",               # Vercel staging deployment
+    "https://www.codeeagleinfosolutions.com",   # Production domain
+    "https://codeeagleinfosolutions.com",       # Root domain
+]
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
@@ -68,21 +89,32 @@ app = FastAPI(
     lifespan=lifespan,
 )
 
-# CORS middleware for frontend communication
+# CORS middleware for Astro + Vercel frontend communication
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=ALLOWED_ORIGINS,
     allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
+    allow_methods=["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
+    allow_headers=["Content-Type", "Authorization", "Accept"],
 )
 
 # Register routers under /api/v1
 app.include_router(public_auth_router, prefix=settings.API_V1_STR)
 app.include_router(public_inquiries_router, prefix=settings.API_V1_STR)
+app.include_router(public_services_router, prefix=settings.API_V1_STR)
+app.include_router(public_blogs_router, prefix=settings.API_V1_STR)
+app.include_router(public_jobs_router, prefix=settings.API_V1_STR)
+app.include_router(public_settings_router, prefix=settings.API_V1_STR)
+
 app.include_router(admin_auth_router, prefix=settings.API_V1_STR)
+app.include_router(admin_inquiries_router, prefix=settings.API_V1_STR)
 app.include_router(admin_notifications_router, prefix=settings.API_V1_STR)
+app.include_router(admin_services_router, prefix=settings.API_V1_STR)
+app.include_router(admin_blogs_router, prefix=settings.API_V1_STR)
+app.include_router(admin_jobs_router, prefix=settings.API_V1_STR)
+app.include_router(admin_settings_router, prefix=settings.API_V1_STR)
 
 @app.get("/health", tags=["System"])
+@app.get(f"{settings.API_V1_STR}/health", tags=["System"])
 async def health_check():
-    return {"status": "ok", "project": settings.PROJECT_NAME}
+    return {"status": "ok", "service": "ceis-d1-api", "version": "1.0.0"}
